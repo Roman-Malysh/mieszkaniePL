@@ -1,0 +1,77 @@
+@import './Variables.scss';
+@import './Mixins.scss';
+
+.nav-mobile {
+  @include onDesktop {
+    display: none;
+  }
+  box-sizing: border-box;
+  padding: 20px;
+  padding-right: 20px;
+  width: 100%;
+  background-color: $dark;
+  position: fixed;
+  z-index: 99;
+  top: 1200px;
+  &__p {
+    color: $light;
+    font-size: 20px;
+  }
+  &__tel-icon {
+    color: $light;
+    margin-right: 10px;
+  }
+  &__mail-icon {
+    color: $light;
+    margin-right: 10px;
+  }
+  &__tel {
+    height: max-content;
+    text-decoration: none;
+    color:  $light;
+  }
+  &__mail {
+    height: max-content;
+    text-decoration: none;
+    color:  $light;
+  }
+  &__wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__ul {
+    list-style-type: none;
+    padding: 0;
+    border-bottom: 1px solid $light;
+  }
+  &__li {
+    margin-bottom: 10px;
+  }
+  &__a {
+    text-decoration: none;
+    color: $light;
+  }
+}
+
+.open {
+  animation: nav 0.3s linear forwards;
+}
+
+@keyframes nav {
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: 100px;
+  }
+}
+
+@keyframes navClosed {
+  0% {
+    top: 100px;
+  }
+  100% {
+    top: -200px;
+  }
+}

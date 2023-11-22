@@ -1,0 +1,57 @@
+@import './Variables.scss';
+@import './Mixins.scss';
+
+.project {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: $dark;
+  &__map {
+    background-image: url('https://gotowemieszkanie.pl/wp-content/uploads/2022/12/mapka_wizualizacja.png');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    @include onDesktop {
+      height: 600px;
+    }
+  }
+  &__button {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 20px;
+    &-dark {
+      border: none;
+      background-color: $dark;
+      color: $light;
+      padding: 1.4em 3em 1.25em;
+      display: flex;
+      align-items: center;
+      margin: 20px;
+      font-size: 20px;
+    }
+    @include onTablet {
+      margin: 40px;
+    }
+    &-arrow {
+      width: 20px;
+      height: 20px;
+      margin-left: 10px;
+    }
+  }
+  &__h2 {
+    text-align: center;
+  }
+  @include onTablet {
+    padding: 40px;
+  }
+  @include onDesktop {
+    padding: 80px;
+  }
+}

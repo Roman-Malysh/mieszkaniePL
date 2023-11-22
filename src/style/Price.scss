@@ -1,0 +1,99 @@
+@import '../style/Variables.scss';
+@import '../style/Mixins.scss';
+
+.prices {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  @include onDesktop {
+    flex-direction: row;
+  }
+  &__grid {
+    @include onTablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include onDesktop {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__price {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    color: $dark;
+    &-classic {
+      background-color: #A58365;
+    }
+    &-style {
+      background-color: #CEC5BA;
+    }
+    &-premium {
+      background-color: #302E2E;
+      color: $light;
+    }
+    &__button {
+      border: none;
+      background-color: transparent;
+      color: $dark;
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      padding: 0;
+      &-premium {
+        color: $light;
+      }
+    }
+    &-title {
+      &::before {
+        content: 'PAKIET';
+        position: absolute;
+        font-weight: 300;
+        font-size: 20px;
+        top: 30%;
+        left: -5px;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  &__p {
+    margin: 20px 0;
+  }
+  &__head {
+    background-color: $dark;
+    padding: 20px;
+    color: $light;
+    @include onTablet {
+      padding: 40px;
+    }
+    @include onDesktop {
+      padding: 80px;
+    }
+  }
+  &__grid-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+    @include onDesktop {
+      width: 100px;
+      height: 100px;
+      margin: 30px 0;
+    }
+  }
+  &__item-title {
+    text-align: center;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

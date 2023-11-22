@@ -1,0 +1,89 @@
+@import './Variables.scss';
+@import './Mixins.scss';
+
+.footer {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto; 
+  background-color: $dark;
+  padding: 20px 0;
+  @include onTablet {
+    padding: 40px 0;
+  }
+  @include onDesktop {
+    padding: 80px 0;
+  }
+  &__container {
+    padding: 0 20px;
+    @include onTablet {
+      padding: 0 40px;
+    }
+    @include onDesktop {
+      padding: 0 80px;
+    }
+  }
+  &__copyrights {
+    color: $light;
+  }
+  &__notes {
+    color: $light;
+    text-align: center;
+    font-size: 14px;
+    margin: 30px 0;
+    border-bottom:  1px solid $light;
+  }
+  &__socials {
+    display: flex;
+    gap: 20px;
+  }
+  &__adress {
+    display: flex;
+    flex-direction: column;
+    color: $light;
+    border-left: 1px solid $light;
+    padding: 10px;
+    gap: 10px ;
+    &:first-of-type {
+      margin-top: 20px;
+    }
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+    &-city {
+      margin: 0;
+      font-weight: 700;
+    }
+    &-p {
+      margin: 0;
+    }
+    &-a {
+      color: $light;
+      text-decoration: none;
+    }
+  }
+  &__home {
+    object-position: center;
+    object-fit: cover;
+    height: 50px;
+  }
+  &__nav {
+    &__ul {
+      list-style-type: none;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0;
+      @include onDesktop {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &__a {
+      color: $light;
+      text-decoration: none;
+    }
+    &__li {
+      margin-bottom: 10px;
+    }
+  }
+}
