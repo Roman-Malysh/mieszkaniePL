@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/mieszkaniePL/static/css/main.b73bf86e.css",
+    "main.css": "/mieszkaniePL/static/css/main.1905ff7a.css",
     "main.js": "/mieszkaniePL/static/js/main.8def97c5.js",
     "static/js/787.d4aba7ab.chunk.js": "/mieszkaniePL/static/js/787.d4aba7ab.chunk.js",
     "static/media/logoPL.png": "/mieszkaniePL/static/media/logoPL.1b7f14862ae883009ea4.png",
     "index.html": "/mieszkaniePL/index.html",
     "static/media/getFetch.cjs": "/mieszkaniePL/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.b73bf86e.css.map": "/mieszkaniePL/static/css/main.b73bf86e.css.map",
+    "main.1905ff7a.css.map": "/mieszkaniePL/static/css/main.1905ff7a.css.map",
     "main.8def97c5.js.map": "/mieszkaniePL/static/js/main.8def97c5.js.map",
     "787.d4aba7ab.chunk.js.map": "/mieszkaniePL/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b73bf86e.css",
+    "static/css/main.1905ff7a.css",
     "static/js/main.8def97c5.js"
   ]
 }
