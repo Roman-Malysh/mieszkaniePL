@@ -19,7 +19,8 @@ i18n
     debug: false,
     backend: {
       //                 ⬇️
-      loadPath: '/mieszkaniePL/locales/translation.js',
+      loadPath: '/mieszkaniePL/locales/pl/translation.json',
+      adPath: '/mieszkaniePL/locales/en/translation.json',
     },
   });
 
