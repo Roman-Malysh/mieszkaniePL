@@ -19,7 +19,7 @@ i18n
     debug: false,
     backend: {
       //                 ⬇️
-      loadPath: '/mieszkaniePL/locales/',
+      loadPath: '/mieszkaniePL/locales/locals/translation.js',
     },
   });
 
