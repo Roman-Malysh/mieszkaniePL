@@ -1,8 +1,20 @@
 @import './style/Variables.scss';
 @import './style/Mixins.scss';
 
+html {
+  position: fixed;
+    overflow: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
 body {
   background-color: $light;
+  height: 100%;
+    margin: 0;
+    overflow: auto;
 }
 
 #root {
